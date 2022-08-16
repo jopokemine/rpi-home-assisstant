@@ -130,3 +130,5 @@ dmypy.json
 
 # miscallaneous
 mac_addrs.csv
+config.py
+users_conn_status.txt
