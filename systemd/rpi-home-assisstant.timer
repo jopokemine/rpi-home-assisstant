@@ -1,0 +1,10 @@
+[Unit]
+Description=RPi Home Assisstant
+Requires=rpi-home-assisstant.service
+
+[Timer]
+Unit=rpi-home-assisstant.service
+OnCalendar=*:0/3
+
+[Install]
+WantedBy=timers.target

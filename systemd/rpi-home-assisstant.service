@@ -1,0 +1,12 @@
+[Unit]
+Description=RPi Home Assisstant
+After=network.target httpd-init.service
+Wants=rpi-home-assisstant.timer
+
+[Service]
+WorkingDirectory=/home/pi/rpi-home-assisstant
+ExecStart=/usr/bin/python3 main.py
+Type=oneshot
+
+[Install]
+WantedBy=default.target

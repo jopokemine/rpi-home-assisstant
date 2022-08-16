@@ -1,0 +1,13 @@
+[Unit]
+Description=RPi stats
+After=network.target httpd-init.service
+
+[Service]
+WorkingDirectory=/home/pi/rpi-home-assisstant/display
+ExecStart=/usr/bin/python3 stats.py
+Type=simple
+Restart=always
+User=pi
+
+[Install]
+WantedBy=default.target
